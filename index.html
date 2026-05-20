@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylex AI | Syntiox Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #222222;
+            --text-muted: #555555;
+            --accent-color: #000000;
+            --border-color: #eaeaea;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .brand {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            color: var(--accent-color);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .sub-brand {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-weight: 400;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-weight: 400;
+            text-align: justify;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .features-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            color: var(--text-muted);
+        }
+
+        .features-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .features-list strong {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #333333;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: #f7f7f7;
+            border-color: #cccccc;
+        }
+
+        footer {
+            margin-top: 80px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="brand">Ceylex AI</a>
+            <div class="sub-brand">Advanced Language Intelligence Platform by Syntiox</div>
+        </header>
+
+        <section>
+            <h2>About Ceylex AI</h2>
+            <p>
+                Ceylex AI is a state-of-the-art, custom-engineered artificial intelligence model pioneered by Syntiox. Built entirely on top-tier open architecture neural frameworks, Ceylex AI represents a breakthrough in specialized text comprehension, highly optimized code synthesis, and standalone structural execution without the structural overhead of conventional large systems.
+            </p>
+            <p>
+                Designed from its inception to break reliance on rigid external configurations or standard system prompt constraints, this computational engine embeds its core architectural alignment and operational persona natively within its weights. It provides fluid, contextually stable responses across complex procedural chains.
+            </p>
+        </section>
+
+        <section>
+            <h2>Core Capabilities & Architecture</h2>
+            <p>
+                Through meticulous structural alignment and state-of-the-art parameters adjustment, Ceylex AI has achieved optimal convergence milestones, presenting exceptionally low training loss values that translate directly into clean inference efficiency.
+            </p>
+            <ul class="features-list">
+                <li><strong>Native Persona Embedding:</strong> Operates autonomously without requiring external instruction scaffolding to recognize and declare its core identity.</li>
+                <li><strong>Advanced Multi-turn Context Retention:</strong> Natively retains extensive historical tracking inside complex diagnostic chains, allowing recursive problem-solving loops.</li>
+                <li><strong>Optimized Quantized Distribution:</strong> Compiled specifically for hardware-agnostic standalone runtimes, delivering rapid tokens generation directly on standardized edge-hardware environments.</li>
+                <li><strong>Syntiox Lab Integration:</strong> Engineered to blend seamlessly into automated web ecosystems, structural newsletter engines, and specialized production servers.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Access & Integration</h2>
+            <p>
+                The model weights and customized computational adapters are completely decentralized and prepared for quick integration inside global local hosting hubs or distributed node applications.
+            </p>
+            
+            <div class="btn-container">
+                <a href="https://syntiox-ai.pages.dev/" target="_blank" class="btn btn-primary">Try Live Demo</a>
+                <a href="https://huggingface.co/sh4lu-z/ceylex_x" target="_blank" class="btn btn-secondary">View Repository on Hugging Face</a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Syntiox Lab. All rights reserved. Developed and maintained for next-generation intelligence.
+        </footer>
+    </div>
+
+</body>
+</html>
